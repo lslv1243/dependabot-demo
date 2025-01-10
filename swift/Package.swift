@@ -9,7 +9,7 @@ let package = Package(
         .macOS(.v10_15)
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", exact: "4.61.0"),
+        .package(url: "https://github.com/vapor/vapor.git", exact: "4.61.1"),
         .package(url: "https://github.com/apple/swift-algorithms", from: "1.1.0"),
     ],
     targets: [
