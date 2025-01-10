@@ -13,3 +13,7 @@ updates:
     directory: "/ruby"
     schedule:
       interval: "weekly"
+  - package-ecosystem: swift
+    directory: "/swift"
+    schedule:
+      interval: "weekly"
