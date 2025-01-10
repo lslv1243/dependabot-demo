@@ -17,3 +17,7 @@ updates:
     directory: "/swift"
     schedule:
       interval: "weekly"
+  - package-ecosystem: swift
+    directory: "/xcode"
+    schedule:
+      interval: "weekly"
