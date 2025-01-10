@@ -9,8 +9,8 @@ let package = Package(
         .macOS(.v10_15)
     ],
     dependencies: [
-        // Adding Vapor as a dependency with version 4.61.0
-        .package(url: "https://github.com/vapor/vapor.git", exact: "4.61.0")
+        .package(url: "https://github.com/vapor/vapor.git", exact: "4.61.0"),
+        .package(url: "https://github.com/apple/swift-algorithms", from: "1.1.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -18,8 +18,7 @@ let package = Package(
         .executableTarget(
             name: "swift",
             dependencies: [
-                // Adding Vapor as a dependency to the target
-                .product(name: "Vapor", package: "vapor")
+                .product(name: "Vapor", package: "vapor"),
             ]
         ),
     ]
